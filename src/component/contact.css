@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Poppins&family=Roboto&display=swap');
+/**
+font-family: 'DM Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+***/
+.contact-center{
+    width:90vw;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+.contact-row h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: rgb(12, 74, 197);
+}
+.contact-row p{
+    font-size: 1.3rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 800;
+}
+.email-contact{
+    display: flex;
+    gap: 1rem;
+}
+.email-contact h1{
+    font-size: 2rem;
+    color: rgb(12, 109, 200);
+}
+.email-contact h3{
+    font-size: 1.5rem;
+}
+.contact-container a{
+    text-decoration: none;
+    font-size: 1rem;
+ line-height: -300px;
+ color: black;
+ cursor: pointer;
+}
+.contact-container a:hover{
+    color: rgba(10, 125, 207, 0.613);
+}
+
+@media (min-width:992px) {
+
+    .contact-container a{
+        text-decoration: none;
+        font-size: 1.3rem;
+     line-height: -300px;
+     color: black;
+     cursor: pointer;
+    }
+    .contact-row p{
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+}

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Poppins&family=Roboto&display=swap');
+/**
+font-family: 'DM Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+***/
+.hero{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+.header{
+    text-align: center;
+}
+.header-center{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1220px
+}
+.row{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+.image-container img{
+height: 20rem;
+width: 20rem;
+animation:imgrotator 8s ease-in-out infinite 1s;
+}
+.header-txt .title h1{
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.826);
+    font-weight: 600;
+}
+.header-txt .title .details{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.461);
+}
+.tech-stack{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.tech-stack p{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+strong{
+    text-align: center;
+}
+.tech{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:27px;
+}  
+.tech li {
+    list-style: none;
+    font-size: 3rem;
+}
+.html{
+    color: rgb(255, 153, 0);
+}
+.css{
+    color: rgb(0, 81, 255);
+}
+.js{
+    color: rgba(255, 255, 0);
+}
+.boot{
+    color: rgb(111, 0, 246);
+}
+.react{
+    color: rgb(9, 116, 210);
+}
+.linkedin{
+    color: black;
+}
+.linkedin:hover{
+    color: rgba(0, 115, 255, 0.746);
+}
+.my-links{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    margin-right: 5%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.my-links li {
+    list-style: none;
+    font-size: 2rem;
+}
+
+.my-links a{
+    color: black;
+    transition: .3s;
+}
+.my-links a:hover{
+    color: rgba(0, 115, 255, 0.746);
+}
+
+
+@keyframes imgrotator {
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+}
+
+
+@media (min-width:992px) {
+    .container{
+        width: 90vw;
+        max-width: 1200px;
+        margin:0 auto ;
+    }
+    .row{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .header-txt .title h1{
+        font-family: 'Poppins', sans-serif;
+        color: rgba(0, 0, 0, 0.826);
+        font-weight: 600;
+        margin-bottom: -1rem;
+    }
+    .header-txt .title .details{
+        line-height: -900px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 0.461);
+    }
+    .header-txt{
+        text-align: left;
+    }
+    .image-container img{
+        height: 20rem;
+        width: 20rem;
+        animation:imgrotator 8s ease-in-out infinite 1s;
+        }
+    .tech-stack{
+        text-align: left;
+        margin-left: 1rem;
+        }
+        .tech li{
+            font-size: 4rem;
+            padding: 0 1rem 0 1rem;
+        }
+        .my-links{
+        margin-right: 90%;
+        margin-left: 2rem;
+        }
+        .my-links li a{
+            font-size: 2rem;
+            padding: 0.6rem;
+        }
+        .image-container img{
+            margin-right:3rem ;
+        }
+}
+
+@media (min-width:700px){
+  .tech{
+    display:flex;
+  }
+.tech li{
+    padding: 0 0.4rem 0 0.4rem;
+}
+}

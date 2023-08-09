@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Poppins&family=Roboto&display=swap');
+/**
+font-family: 'DM Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+***/
+.works{
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+
+.work-center{
+    width: 90vw;
+    max-width: 1220px;
+    margin:0 auto;
+}
+.my-works h3{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: rgb(12, 74, 197);
+}
+.my-works h1{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2rem;
+}
+.work-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:3rem ;
+    flex-wrap: wrap;
+}
+.work{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem;
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.work-img img{
+    border: 1px solid black;
+    width: 15rem;
+    transition: .3s;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.work-img img:hover{
+    transform: scale(1.2);
+}
+.work-title h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    color: rgb(12, 74, 197);
+}
+
+.work-title p{
+    font-family: 'Roboto', sans-serif;   
+    color: rgba(0, 0, 0, 0.629);
+    flex-wrap: wrap;
+}
+.work-link a{
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+    border: none;
+    transition: .3s;
+}
+.git{
+    font-size: 2rem;
+    color: rgb(45, 20, 20);
+}
+.git:hover{
+    color: rgba(0, 76, 255, 0.545);
+}
+.work-link a:hover{
+    color: rgba(0, 76, 255, 0.545);
+}
+.works{
+    padding-bottom: 1rem;
+}
+
+
+@media (min-width:992px) {
+    .my-works h1{
+        text-align: center;
+    }
+    .work-links{
+        display: flex;
+        flex-direction: row;
+    }
+    .work{
+        text-align: center;
+        width: 500px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 1rem;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .works{
+        padding-bottom: 1rem;
+    }
+}
+@media  (min-width:700px) {
+    .work{
+        text-align: center;
+        width: 500px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 1rem;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .work-title p{
+        font-family: 'Roboto', sans-serif;   
+        color: rgba(0, 0, 0, 0.629);
+        text-align: center;
+    }
+
+}
+
+
+
+
